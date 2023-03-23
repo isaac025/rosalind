@@ -1,0 +1,36 @@
+cabal-version:      >=1.10
+name:               rosalind
+version:            0.1.0.0
+synopsis:           Rosalind exercises
+
+-- A longer description of the package.
+-- description:
+homepage:           https://github.com/isaac025/rosalind
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            GPL-2
+license-file:       LICENSE
+author:             Isaac Lopez
+maintainer:         isaac.lopez@upr.edu
+
+-- A copyright notice.
+-- copyright:
+category:           Bioinformatics
+build-type:         Simple
+extra-source-files: CHANGELOG.md
+
+
+library
+    exposed-modules:  CDN
+                    , TDIR
+
+    ghc-options:      -Wall
+    -- Modules included in this library but not exported.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base >=4.16 && <4.17
+    hs-source-dirs:   src
+    default-language: Haskell2010
